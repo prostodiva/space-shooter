@@ -10,7 +10,7 @@ public class PathFinder : MonoBehaviour
 
     void Awake()
     {
-        enemySpawner = FindObjectOfType<EnemySpawner>();
+        enemySpawner = FindFirstObjectByType<EnemySpawner>();
     }
     
     void Start()
