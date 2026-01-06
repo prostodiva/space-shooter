@@ -148,7 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd013cde34384cc6a79a71e482afd1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  currentWave: {fileID: 11400000, guid: 841d50428c7a04b4d91aafb462dce0b3, type: 2}
+  waveConfigs:
+  - {fileID: 11400000, guid: 54bf4bf36f1d5492cabe5afc7db68080, type: 2}
+  - {fileID: 11400000, guid: 841d50428c7a04b4d91aafb462dce0b3, type: 2}
+  - {fileID: 11400000, guid: f44eff6083df04423a685784e3be2e61, type: 2}
+  timeBetweenWaves: 2
+  isLooping: 1
 --- !u!4 &438217561
 Transform:
   m_ObjectHideFlags: 0
@@ -517,8 +522,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3044153493066871890, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044153493066871890, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.86
+      value: -3.93
       objectReference: {fileID: 0}
     - target: {fileID: 4475740680862291098, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
       propertyPath: moveSpeed
@@ -531,6 +540,14 @@ PrefabInstance:
     - target: {fileID: 4475740680862291098, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
       propertyPath: paddingBottom
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565889445485595036, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
+      propertyPath: useAI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565889445485595036, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
+      propertyPath: firingRateVariance
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5053227455577473803, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
       propertyPath: m_Name
