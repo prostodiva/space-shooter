@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5981392881323443258}
   - component: {fileID: 2312657176027508931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemyBlack2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6059171773132128701}
   - component: {fileID: 2763027120064284366}
-  m_Layer: 0
+  - component: {fileID: -7453239190776371964}
+  - component: {fileID: -3018374880404581600}
+  - component: {fileID: 4581029227960833960}
+  - component: {fileID: 2569648561589903939}
+  - component: {fileID: -542456873982279974}
+  m_Layer: 7
   m_Name: enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +122,7 @@ Transform:
   m_GameObject: {fileID: 6454133360790769150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.68998, y: 4.43039, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -136,4 +141,111 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8aa362131ee49669daea50e4b25125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PathFinder
-  waveConfig: {fileID: 0}
+--- !u!50 &-7453239190776371964
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454133360790769150}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &-3018374880404581600
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454133360790769150}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.027833343}
+  m_Radius: 0.45972812
+--- !u!114 &4581029227960833960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454133360790769150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2c4db12960247d58cd7ea615e41bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::health
+  health: 50
+--- !u!114 &2569648561589903939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454133360790769150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec4d8c79d4a74e768923a121ec90b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageDealer
+  damage: 15
+--- !u!114 &-542456873982279974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454133360790769150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b7adeebf87e4bd9bfd4d9242dbd99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shooter
+  projectilePrefab: {fileID: 1134207548410672421, guid: 5bcdde47afc5d45f793cd62ad879d46d, type: 3}
+  projectileSpeed: 10
+  projectileLifeTime: 5
+  baseFiringRate: 1
+  useAI: 1
+  firingRateVariance: 0.5
+  minRateVariance: 0.1
