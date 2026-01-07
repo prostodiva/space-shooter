@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e07d6f9c033f842a1b9575e6814b2c16, type: 3}
-  m_Name: Wave 2
+  m_Name: Wave3
   m_EditorClassIdentifier: Assembly-CSharp::WaveConfig
   enemyPrefabs:
-  - {fileID: 6454133360790769150, guid: 212ef670aa59148048b6af066381c7f2, type: 3}
-  - {fileID: 6454133360790769150, guid: 212ef670aa59148048b6af066381c7f2, type: 3}
-  - {fileID: 6454133360790769150, guid: 212ef670aa59148048b6af066381c7f2, type: 3}
-  - {fileID: 6454133360790769150, guid: 212ef670aa59148048b6af066381c7f2, type: 3}
-  pathPrefab: {fileID: 5222136673665082026, guid: 6c4fb512ac206441ca876f4efe821719, type: 3}
+  - {fileID: 2927590315824296491, guid: ae67a34a990774ff9b62c0dbf9749e14, type: 3}
+  - {fileID: 2927590315824296491, guid: ae67a34a990774ff9b62c0dbf9749e14, type: 3}
+  - {fileID: 2927590315824296491, guid: ae67a34a990774ff9b62c0dbf9749e14, type: 3}
+  pathPrefab: {fileID: 2541938968025505108, guid: 5456f5afb1f904fa5b22d7c2bdcfad44, type: 3}
   moveSpeed: 6
   timeBetweenSpawns: 1
   spawnTimeVariance: 0.5

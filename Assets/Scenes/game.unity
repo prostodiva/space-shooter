@@ -243,7 +243,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54bf4bf36f1d5492cabe5afc7db68080, type: 2}
   - {fileID: 11400000, guid: 841d50428c7a04b4d91aafb462dce0b3, type: 2}
   - {fileID: 11400000, guid: f44eff6083df04423a685784e3be2e61, type: 2}
-  timeBetweenWaves: 2
+  - {fileID: 11400000, guid: 7aa9a52051fed4df18b5b9f85370210a, type: 2}
+  - {fileID: 11400000, guid: e358d102d93e342a997aa2220c41c8ec, type: 2}
+  timeBetweenWaves: 3
   isLooping: 1
 --- !u!4 &438217561
 Transform:
@@ -1479,6 +1481,10 @@ PrefabInstance:
     - target: {fileID: 4565889445485595036, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
       propertyPath: firingRateVariance
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802552422092126189, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5053227455577473803, guid: a909e70d7cf78414c89926349e6a56e2, type: 3}
       propertyPath: m_Name
