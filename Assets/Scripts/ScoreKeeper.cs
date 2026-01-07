@@ -2,7 +2,21 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    private int score;
+    private int score = 0;
+    static ScoreKeeper instance;
+    
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public int GetScore()
     {
